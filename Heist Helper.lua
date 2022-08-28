@@ -1,7 +1,7 @@
 -- ALL CODES ARE FROM IceDoomfist#0001 Thank you . 
         util.require_natives("natives-1651208000")
         util.toast("Heist Helper by XxRagulxX#9490")
-        --- Github Integration
+        --- Github Integration :)
         async_http.init("raw.githubusercontent.com", "/XxRagulxX/Heist-Helper/main/version.lua", function(output)
             currentVer = tonumber(output)
             response = true
