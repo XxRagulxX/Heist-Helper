@@ -8,7 +8,7 @@
             if localVer ~= currentVer then
                 util.toast("Heist Helper version is available, update the lua to get the newest version.")
                 menu.action(menu.my_root(), "Update Lua", {}, "", function()
-                    async_http.init('raw.githubusercontent.com','/XxRagulxX/Heist-Helper/main/Heist%20Helper.lua',function(a)
+                    async_http.init('raw.githubusercontent.com','/XxRagulxX/Heist-Helper/main/HeistHelper.lua',function(a)
                         local err = select(2,load(a))
                         if err then
                             util.toast("Script failed to download. Please try again later. If this continues to happen then manually update via github.")
