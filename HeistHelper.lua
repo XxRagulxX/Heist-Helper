@@ -2,6 +2,8 @@
         util.require_natives("natives-1651208000")
         util.toast("Heist Helper by XxRagulxX#9490")
         --- Github Integration :)
+        local response = false
+        localVer = 1.4
         async_http.init("raw.githubusercontent.com", "/XxRagulxX/Heist-Helper/main/version.lua", function(output)
             currentVer = tonumber(output)
             response = true
