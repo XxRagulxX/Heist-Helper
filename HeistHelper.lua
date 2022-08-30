@@ -1700,6 +1700,26 @@
         end)
 
         ---
+        AUTO_COMPLETE_HEIST = menu.list(menu.my_root(), ("Instance Heist Complete"), {}, "", function(); end)
+        menu.toggle_loop(AUTO_COMPLETE_HEIST, "Cayo / Tuners / Agency", {}, IsWorking(false), function() -- Done Cayo Perico Heist Instantly: https://www.unknowncheats.me/forum/3472329-post13554.html
+            if players.get_script_host() ~= players.user() then
+                menu.trigger_commands("scripthost")
+            end
+
+            SET_INT_LOCAL("fm_mission_controller_2020", 31554 + 6843, 51338752)
+            SET_INT_LOCAL("fm_mission_controller_2020", 31554 + 8218, 50)
+        end)
+
+        menu.toggle_loop(AUTO_COMPLETE_HEIST, "Casino Aggressive / Doomsday / Classic", {}, IsWorking(false), function()
+            if players.get_script_host() ~= players.user() then
+                menu.trigger_commands("scripthost")
+            end
+
+            SET_INT_LOCAL("fm_mission_controller", 19679, 12)
+            SET_INT_LOCAL("fm_mission_controller", 19679 + 2686, 10000000)
+            SET_INT_LOCAL("fm_mission_controller", 28298 + 1, 99999)
+            SET_INT_LOCAL("fm_mission_controller", 31554 + 69, 99999)
+        end)
 
         NEAR_PED_CAM = menu.list(menu.my_root(), ("Manage Near Peds & Cams"), {}, "", function(); end)
             
