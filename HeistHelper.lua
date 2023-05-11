@@ -536,7 +536,7 @@
                 TELEPORT(997.5346, 84.51491, 80.990555)
             end)
 
-
+--- Casino 
 
         menu.toggle_loop(CASINO_HEIST, ("Skip Hacking"), {}, IsWorking(true) .. ("Works on both of sorts: Fingerprint and Keypad"), function()
             if GET_INT_LOCAL("fm_mission_controller", 52929) ~= 1 then -- For Fingerprint, 
